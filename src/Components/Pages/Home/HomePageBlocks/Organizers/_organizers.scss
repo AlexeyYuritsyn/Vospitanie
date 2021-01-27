@@ -1,0 +1,87 @@
+@import "../../../../../styles/variables/_colors";
+
+
+.organizers {
+
+}
+
+.organizers-container {
+  padding: 20px 0 10px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.organizer {
+
+}
+
+.organizer-role {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.organizer-link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.organizer-logo {
+  margin: 0 auto 10px auto;
+  height: 70px;
+}
+
+.organizer-title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  white-space: pre-line;
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 768px) {
+  .organizer-role {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+
+}
+
+@media (min-width: 1080px) {
+    .organizer-logo {
+      transition: opacity 0.3s;
+    }
+    .organizer-link:hover .organizer-logo {
+      opacity: 0.80;
+    }
+    .organizer-title {
+      transition: color 0.3s;
+    }
+    .organizer-link:hover .organizer-title {
+      color: $hover-text-color;
+    }
+}

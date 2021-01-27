@@ -1,0 +1,136 @@
+@import "../../styles/variables/_colors";
+
+
+.footer {
+  width: 100%;
+  height: fit-content;
+  padding: 15px 0;
+  background-color: $footer-color;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container {
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-support-wrap {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  margin: auto 0;
+}
+
+.footer-support-item-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.footer-support-header {
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.footer-support-container {
+  display: grid;
+  grid-row-gap: 5px;
+}
+
+.footer-share {
+  margin: auto 0;
+}
+
+.footer-contacts-text {
+  font-size: 1rem;
+}
+
+.footer-contacts-icon {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.footer-socials-container {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1080px) {
+  .footer-contacts-icon {
+    //height: 50px;
+    //margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: fit-content;
+  }
+
+  .footer-support-wrap {
+    display: grid;
+    grid-row-gap: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    width: 100%;
+  }
+
+  .footer-support-wrap {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    padding-bottom: 10px;
+  }
+
+  .footer-socials-container {
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-contacts-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .footer-contacts-link {
+    transition: color 0.3s;
+  }
+
+  .footer-contacts-link:hover {
+    color: $hover-text-color;
+  }
+}
+

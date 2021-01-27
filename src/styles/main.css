@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  overflow-y: scroll;
+}
+
+#root {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  margin: 130px auto 0 auto;
+}
+
+.container {
+  width: 1600px;
+}
+
+@media (max-width: 1920px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  #root {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main {
+    margin: 100px auto 0 auto;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-filter {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container {
+    padding: 0 0.5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

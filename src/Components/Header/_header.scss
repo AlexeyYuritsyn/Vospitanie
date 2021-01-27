@@ -1,0 +1,59 @@
+@import "../../styles/variables/_colors";
+
+
+.header {
+  width: 100%;
+  position: fixed;
+  height: 100px;
+  //box-shadow: 0 0 20px 0 rgba(51, 51, 51, 0.1);
+  z-index: 1000;
+  background: $header-color;
+  //background-color: orange;
+}
+
+.header-container {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-container {
+  height: 100%;
+}
+
+.bm-overlay {
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 350px) {
+
+}
+
+@media (min-width: 1080px) {
+
+}

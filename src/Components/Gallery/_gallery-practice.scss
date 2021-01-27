@@ -1,0 +1,65 @@
+@import "../../styles/variables/_colors";
+
+
+.gallery {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  height: 200px;
+  width: 200px;
+  margin: 20px 20px;
+}
+
+.gallery-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery-item {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 325px) {
+  .gallery-item {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .gallery-image {
+    transition: opacity 0.3s;
+  }
+
+  .gallery-image:hover {
+    opacity: 0.6;
+  }
+}

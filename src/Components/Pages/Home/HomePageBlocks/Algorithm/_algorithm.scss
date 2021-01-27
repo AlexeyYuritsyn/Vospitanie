@@ -1,0 +1,233 @@
+@import "../../../../../styles/variables/_colors";
+
+
+.algorithm {
+
+}
+
+.algorithm-container {
+  display: grid;
+  grid-row-gap: 30px;
+  padding-top: 40px;
+}
+
+.algorithm-stage {
+  display: grid;
+  grid-template-columns: 35% 34px 1fr;
+}
+
+.past-stage-text {
+  color: $darkgray;
+}
+
+.present-stage {
+
+}
+
+.algorithm-stage-date {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.algorithm-stage-date-desktop {
+  display: block;
+}
+
+.algorithm-stage-date-mobile {
+  display: none;
+}
+
+.algorithm-stage-widget {
+  position: relative;
+}
+
+.algorithm-stage-widget-circle {
+  position: absolute;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border: 2px solid $sandybrown;
+  border-radius: 50%;
+}
+
+.past-stage-circle {
+  background-color: $sandybrown;
+}
+
+.algorithm-stage-widget-line {
+  width: 2px;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  bottom: -27px;
+  left: 15px;
+  background-color: $sandybrown;
+}
+
+.algorithm-stage:last-child .algorithm-stage-widget .algorithm-stage-widget-line {
+  display: none;
+}
+
+.algorithm-stage-content {
+  padding-left: 30px;
+  display: grid;
+  grid-row-gap: 15px;
+}
+
+.algorithm-stage-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.algorithm-stage-description {
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.algorithm-stage-description a {
+  color: $sandybrown;
+  font-weight: 400;
+}
+
+.algorithm-stage-description span {
+  color: $darkviolet;
+}
+
+.algorithm-spoiler {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.algorithm-text-summary::-webkit-details-marker{
+  display:none;
+}
+
+.algorithm-text-summary::-moz-list-bullet{
+  list-style-type:none;
+}
+
+.algorithm-text-summary::marker{
+  display:none;
+}
+
+.algorithm-text-summary {
+  cursor: pointer;
+  position: relative;
+}
+
+.algorithm-text-summary:before {
+  position: absolute;
+}
+
+.algorithm-text-details[open] .algorithm-text-summary ~ *{
+  animation: sweep .5s ease-in-out;
+}
+
+.algorithm-text-details[open] .algorithm-text-summary {
+  display: none;
+}
+
+.hide-spoiler {
+  display: none;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1080px) {
+  .algorithm-stage {
+    grid-template-columns: 34px 1fr;
+  }
+
+  .algorithm-stage-description {
+    text-align: left;
+  }
+
+  .algorithm-stage-date {
+    text-align: left;
+  }
+
+  .algorithm-stage-date-desktop {
+    display: none;
+  }
+
+  .algorithm-stage-date-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .algorithm-stage-content {
+    padding-left: 15px;
+  }
+
+  .algorithm-stage-date {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-right: 0;
+  }
+
+  .algorithm-stage-title {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .algorithm-stage-description {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 350px) {
+
+}
+
+@media (min-width: 1080px) {
+  .algorithm-spoiler {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .algorithm-spoiler:hover {
+    color: $hover-text-color;
+  }
+
+  .algorithm-spoiler-chevron {
+    transition: transform 0.3s;
+  }
+
+  .algorithm-spoiler:hover .algorithm-spoiler-chevron {
+    transform: translateY(5px);
+  }
+
+  .algorithm-stage-description a {
+    transition: color 0.3s;
+  }
+
+  .algorithm-stage-description a:hover {
+    color: $darkviolet;
+  }
+}

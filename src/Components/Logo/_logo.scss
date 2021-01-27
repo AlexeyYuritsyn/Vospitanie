@@ -1,0 +1,16 @@
+@import "../../styles/variables/colors";
+
+
+.logo {
+  cursor: default;
+}
+
+.logo-image {
+  height: 75px;
+}
+
+@media (min-width: 1080px) {
+  .logo:hover {
+    cursor: pointer;
+  }
+}

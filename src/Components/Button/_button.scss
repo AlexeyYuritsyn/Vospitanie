@@ -1,0 +1,73 @@
+@import "../../styles/variables/_colors";
+
+
+.button-container {
+  width: 100%;
+  height: inherit;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  color: $alternative-text-color;
+  background-color: $sandybrown;
+  border: 2px solid $sandybrown;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1080px) {
+  .button {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 550px) {
+  .button-container {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .button {
+    transition: all 0.3s;
+  }
+
+  .button:hover {
+    color: $sandybrown;
+    background-color: $alternative-text-color;
+  }
+}
+

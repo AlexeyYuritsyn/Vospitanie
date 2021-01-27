@@ -1,0 +1,160 @@
+@import "../../../../../styles/variables/_colors";
+
+
+.objectives {
+
+}
+
+.objectives-items-container {
+  //max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.objectives-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.objectives-item:last-child {
+  margin-bottom: 0;
+}
+
+.objectives-item-icon {
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+}
+
+.objectives-single-item {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+}
+
+.objectives-item-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.objectives-item-header {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+  margin-bottom: 10px;
+}
+
+.objectives-item-list {
+  list-style-position: inside;
+}
+
+.objectives-item-list-item {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+}
+
+.objectives-spoiler {
+   font-size: 1rem;
+   font-weight: 400;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 25px;
+ }
+
+.objectives-text-summary::-webkit-details-marker{
+  display:none;
+}
+
+.objectives-text-summary::-moz-list-bullet{
+  list-style-type:none;
+}
+
+.objectives-text-summary::marker{
+  display:none;
+}
+
+.objectives-text-summary {
+  cursor: pointer;
+  position: relative;
+}
+
+.objectives-text-summary:before {
+  position: absolute;
+}
+
+.objectives-text-details[open] .objectives-text-summary ~ *{
+  animation: sweep .5s ease-in-out;
+}
+
+.objectives-text-details[open] .objectives-text-summary {
+  display: none;
+}
+
+.hide-spoiler {
+  display: none;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 550px) {
+  .objectives-item {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 350px) {
+
+}
+
+@media (min-width: 1080px) {
+  .objectives-spoiler {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .objectives-spoiler:hover {
+    color: $hover-text-color;
+  }
+
+  .objectives-spoiler-chevron {
+    transition: transform 0.3s;
+  }
+
+  .objectives-spoiler:hover .objectives-spoiler-chevron {
+    transform: translateY(5px);
+  }
+}

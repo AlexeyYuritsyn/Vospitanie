@@ -1,0 +1,38 @@
+@import "../../../../../styles/variables/_colors";
+
+
+.provision-registration {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 550px) {
+  .provision-registration {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 350px) {
+
+}
+
+@media (min-width: 1080px) {
+
+}

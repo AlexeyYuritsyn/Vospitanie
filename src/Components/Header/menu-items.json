@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Главная",
+    "key": "main",
+    "url": "/"
+  },
+  {
+    "title": "Конкурсные проекты",
+    "key": "practices",
+    "url": "/practices"
+  },
+  {
+    "title": "Городские практики",
+    "key": "cityPractices",
+    "url": "/city-practices"
+  },
+  {
+    "title": "Новости",
+    "key": "news",
+    "url": "/news"
+  }
+]

@@ -1,0 +1,183 @@
+@import "../../../../../styles/variables/_colors";
+
+
+.minister {
+
+}
+
+.minister-spoiler {
+  font-size: 0.8rem;
+  font-weight: 300;
+  width: 100%;
+  text-decoration: underline;
+}
+
+.minister-wrap {
+  display: grid;
+}
+
+.minister-container {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+.minister-text {
+  width: 100%;
+  text-align: justify;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.02rem;
+  font-weight: 300;
+}
+
+.minister-text-margin {
+  margin-bottom: 10px;
+}
+
+.minister-signature {
+  margin: 0 20px 0 auto ;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.minister-header-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: fit-content;
+}
+
+.minister-name {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: right;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.minister-position {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: right;
+  width: 100%;
+}
+
+.minister-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-left: 10px;
+}
+
+.hide-spoiler {
+  display: none;
+}
+
+.minister-text-summary::-webkit-details-marker{
+  display:none;
+}
+
+.minister-text-summary::-moz-list-bullet{
+  list-style-type:none;
+}
+
+.minister-text-summary::marker{
+  display:none;
+}
+
+.minister-text-summary {
+  cursor: pointer;
+  position: relative;
+}
+
+.minister-text-summary:before {
+  position: absolute;
+}
+
+.minister-text-details[open] .minister-text-summary ~ *{
+  animation: sweep .5s ease-in-out;
+}
+
+.minister-text-details[open] .minister-text-summary {
+  display: none;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1080px) {
+  .minister-text {
+    text-align: left;
+  }
+
+  .minister-signature {
+    width: 70%;
+  }
+
+  .minister-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .minister-signature {
+    width: 100%;
+    margin: 0 ;
+  }
+
+  .minister-photo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 350px) {
+
+}
+
+@media (min-width: 1080px) {
+  .minister-spoiler {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .minister-spoiler:hover {
+    color: $hover-text-color;
+  }
+
+  .minister-photo {
+    transition: opacity 0.3s;
+  }
+
+  .minister-signature:hover .minister-photo {
+    opacity: 0.80;
+  }
+
+  .minister-header-wrap {
+    transition: color 0.3s;
+  }
+
+  .minister-signature:hover .minister-header-wrap {
+    color: $hover-text-color;
+  }
+}

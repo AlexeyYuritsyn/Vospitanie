@@ -1,0 +1,58 @@
+@import "../../../styles/variables/_colors";
+
+
+.home-page-block-wrap {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.home-page-block-header {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.light-colored-block {
+  background-color: $light-colored-block;
+}
+
+.dark-colored-block {
+  background-color: $dark-colored-block;
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 768px) {
+  .home-page-block-wrap {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .home-page-block-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 350px) {
+
+}
+
+@media (min-width: 1080px) {
+
+}

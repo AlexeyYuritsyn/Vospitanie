@@ -1,0 +1,78 @@
+@import "../../../styles/variables/colors";
+
+
+.menu-desktop{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-desktop-list-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  width: fit-content;
+  height: 100%;
+  user-select: none;
+  margin-right: 5px;
+  border-bottom: 1px solid $header-color;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu-desktop-list-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: inherit;
+  cursor: default;
+}
+
+.menu-desktop-list-link-active .menu-desktop-list-link-title {
+  border-bottom: 1px solid $main-text-color;
+}
+
+.menu-desktop-list-link-title {
+  padding: 12px;
+  height: fit-content;
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 350px) {
+
+}
+
+@media (min-width: 1080px) {
+  .menu-desktop-list-link {
+    transition: all .3s;
+  }
+
+  .menu-desktop-list-link:hover{
+    cursor: pointer;
+    color: $hover-text-color;
+  }
+}

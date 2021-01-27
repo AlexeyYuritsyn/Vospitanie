@@ -1,0 +1,115 @@
+@import "../../../../styles/variables/_colors";
+
+
+.dropdown-profile {
+  position: relative;
+  margin-left: 20px;
+}
+
+.dropdown-profile summary {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-profile summary::-webkit-details-marker {
+  display: none
+}
+
+.dropdown-profile summary:after {
+  //display: inline-block;
+  //content: '\25BF';
+  //margin-left: 5px;
+}
+
+.dropdown-profile-content {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  //width: 200px;
+  height: fit-content;
+  padding: 15px;
+  background-color: $mistyrose;
+  display: grid;
+  grid-row-gap: 15px;
+}
+
+.dropdown-profile-content:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: $mistyrose;
+  position: absolute;
+  top: -5px;
+  right: 30px;
+  transform: rotate(45deg);
+}
+
+.dropdown-profile-name {
+
+}
+
+.profile-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.profile-bold-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.profile-hr {
+  border: 0;
+  height: 1px;
+  background: $main-text-color;
+}
+
+.menu-desktop-list-link-text {
+  padding: 12px 0 12px 12px;
+  height: fit-content;
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1380px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 350px) {
+
+}
+
+@media (min-width: 1080px) {
+  .dropdown-profile-link,
+  .dropdown-profile-name-menu {
+    transition: color 0.3s;
+  }
+
+  .dropdown-profile-link:hover,
+  .dropdown-profile-name-menu:hover {
+    color: $hover-text-color;
+  }
+
+  .dropdown-profile {
+    cursor: pointer;
+  }
+
+  .dropdown-profile-content {
+    cursor: default;
+  }
+}
